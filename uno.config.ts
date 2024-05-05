@@ -66,6 +66,7 @@ export default defineConfig({
     [/^rounded-([\.\d]+)$/, ([_, num]) => ({ 'border-radius': `${num}rem` })],
 
     ['flex-center', { display: 'flex', 'justify-content': 'center', 'align-items': 'center' }],
+    ['flex-between', { display: 'flex', 'justify-content': 'space-between', 'align-items': 'center' }],
     ['disable', { filter: 'grayscale(98%)' }],
   ],
 });

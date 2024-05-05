@@ -6,7 +6,7 @@ import viteCompression from 'vite-plugin-compression';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver, VantResolver } from 'unplugin-vue-components/resolvers';
-import postcsspxtoviewport from 'postcss-px-to-viewport';
+import postcsspxtoviewport8plugin from 'postcss-px-to-viewport-8-plugin';
 import { getEnv } from './src/utils/buildTestnet';
 import UnoCSS from 'unocss/vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
@@ -52,8 +52,8 @@ export default (config) => {
 
       postcss: {
         plugins: [
-          postcsspxtoviewport(getUiVw(1280, 'pm')),
-          postcsspxtoviewport(getUiVw(1920, 'pw')),
+          postcsspxtoviewport8plugin(getUiVw(1280, 'pm')),
+          postcsspxtoviewport8plugin(getUiVw(1920, 'pw')),
         ],
       },
     },
